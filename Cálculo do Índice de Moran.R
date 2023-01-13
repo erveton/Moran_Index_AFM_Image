@@ -9,10 +9,10 @@ L = 256
 image1<-read.table(file = "sample.txt")
 x1<-image1[1]
 x=x1[[1]]
-x_mat   = matrix(x, nrow = L, ncol = 1)
+x_mat   = matrix(x, nrow = 65536, ncol = 1)
 y1<-image1[2]
 y=y1[[1]]
-y_mat = matrix(y, nrow = 1, ncol = L)
+y_mat = matrix(y, nrow = 1, ncol = 65536)
 z1<- image1[3]
 z_vec = z1[[1]]
 
